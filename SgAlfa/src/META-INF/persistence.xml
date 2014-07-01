@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+  <persistence-unit name="SistemaCursoPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <class>sgalfa.entidades.ItensVenda</class>
+    <class>sgalfa.entidades.Vale</class>
+    <class>sgalfa.entidades.Funcionario</class>
+    <class>sgalfa.entidades.Atendimento</class>
+    <class>sgalfa.entidades.Matricula</class>
+    <class>sgalfa.entidades.Venda</class>
+    <class>sgalfa.entidades.Grupo</class>
+    <class>sgalfa.entidades.Cliente</class>
+    <class>sgalfa.entidades.Produto</class>
+    <class>sgalfa.entidades.CursosMatriculados</class>
+    <class>sgalfa.entidades.Despesas</class>
+    <properties>
+      <property name="hibernate.connection.username" value="root"/>
+      <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+      <property name="hibernate.connection.password" value="admin"/>
+      <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/aula"/>
+      <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
+      <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+    </properties>
+  </persistence-unit>
+</persistence>
